@@ -1,14 +1,23 @@
-from typing import Any, List
+"""
+Transform tag to argument
+"""
+from typing import List
 
 DEFAULT_CONTEXT_SYMBOL = ':'
 DEFAULT_LIST_SEPARATOR = ','
 
 
-def format_option(option):
-    return '--{}'.format(option)
+def format_option(option: str) -> str:
+    """
+    Format option
+    """
+    return f'--{option}'
 
 
 def tag_to_arguments(tag: str) -> List[str]:
+    """
+    Transform tag to a list of argument
+    """
     if not tag:
         return []
 
@@ -24,6 +33,9 @@ def tag_to_arguments(tag: str) -> List[str]:
 
 
 def tags_to_arguments(tags: List[str]) -> List[str]:
+    """
+    Transform list of tag to list argument
+    """
     return [
         x for tag in tags for x in tag_to_arguments(tag)
     ]
