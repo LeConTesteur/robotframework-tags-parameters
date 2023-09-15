@@ -1,5 +1,5 @@
 import unittest
-from tagsparser import tag_to_arguments, tags_to_arguments
+from robotframework_tags_parameters.tagsparser import tag_to_arguments, tags_to_arguments
 
 class Testtag_to_arguments(unittest.TestCase):
   def test_no_tag(self):
