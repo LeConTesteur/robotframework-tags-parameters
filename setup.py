@@ -34,7 +34,7 @@ setuptools.setup(
     classifiers=[ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"],
     package_dir={"": "robotframework_tags_parameters"},
     packages=setuptools.find_packages(where="src"),
-    python_requires=">=3.6",
+    python_requires=">=3.8",
     install_requires = requirements,
     tests_require = requirements_tests,
     extras_require = extras,
