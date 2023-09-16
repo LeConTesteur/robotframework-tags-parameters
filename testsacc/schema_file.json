@@ -1,0 +1,17 @@
+{
+  "description": "test",
+  "type": "object",
+  "properties": {
+    "foo": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "reset": {
+      "type": "boolean",
+      "default": true,
+      "false-prefix": "no"
+    }
+  }
+}

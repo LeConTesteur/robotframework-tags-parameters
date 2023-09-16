@@ -28,6 +28,10 @@ class Testconvert_tags_to_dict(TestCase):
       TagsParameters(self.schema).convert_tags_to_dict(),
       {"foo": True, "name": "test_name", "reset": False}
     )
+    self.assertEqual(
+      TagsParameters().convert_tags_to_dict(self.schema),
+      {"foo": True, "name": "test_name", "reset": False}
+    )
 
 if __name__ == '__main__':
   unit_main()

@@ -5,6 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 requirements = [
     'robotframework',
+    'robotframework-jsonlibrary',
     'pyaml',
     'argparse-from-jsonschema'
 ]
