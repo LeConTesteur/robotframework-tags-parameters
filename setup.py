@@ -7,7 +7,7 @@ requirements = [
     'robotframework',
     'robotframework-jsonlibrary',
     'pyaml',
-    'argparse-from-jsonschema'
+    'argparse-from-jsonschema >= 0.0.5'
 ]
 
 requirements_tests = [
@@ -22,7 +22,7 @@ extras = {
 
 setuptools.setup(
     name="robotframework-tags-parameters",
-    version="0.0.2",
+    version="0.0.3",
     author="LeConTesteur",
     description="Can use and parse parameters from robotframework test tags",
     long_description=long_description,
@@ -32,8 +32,8 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/LeConTesteur/robotframework-tags-parameters/issues",
     },
     classifiers=[ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"],
-    package_dir={"": "robotframework_tags_parameters"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"TagsParameters": "robotframework_tags_parameters"},
+    packages={"TagsParameters"},
     python_requires=">=3.8",
     install_requires = requirements,
     tests_require = requirements_tests,

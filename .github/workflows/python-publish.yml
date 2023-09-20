@@ -34,7 +34,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install build tox
     - name: Run Tox 
-      run: tox
+      run: |
+        tox
+        tox -e testsacc
     - name: Build package
       run: python -m build
     - name: Publish package

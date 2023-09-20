@@ -1,0 +1,10 @@
+{
+  "description": "test",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "maxLength": 3
+    }
+  }
+}

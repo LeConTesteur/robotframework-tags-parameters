@@ -1,0 +1,10 @@
+{
+  "description": "My Tags",
+  "type": "object",
+  "properties": {
+    "foo": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
