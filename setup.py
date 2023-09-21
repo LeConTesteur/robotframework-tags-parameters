@@ -3,6 +3,9 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+KEYWORDS = ('robotframework, tags, argparse, parsing,'
+            'jsonschema, data validation, validation')
+
 requirements = [
     'robotframework',
     'robotframework-jsonlibrary',
@@ -22,7 +25,7 @@ extras = {
 
 setuptools.setup(
     name="robotframework-tags-parameters",
-    version="0.0.3",
+    version="0.0.4",
     author="LeConTesteur",
     description="Can use and parse parameters from robotframework test tags",
     long_description=long_description,
@@ -38,5 +41,5 @@ setuptools.setup(
     install_requires = requirements,
     tests_require = requirements_tests,
     extras_require = extras,
-
+    keywords=KEYWORDS,
 )
